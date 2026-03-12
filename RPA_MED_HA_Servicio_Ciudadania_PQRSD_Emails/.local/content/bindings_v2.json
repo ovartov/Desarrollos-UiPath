@@ -1,0 +1,85 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Enviar Correo Notificacion",
+      "activityId": "SendMailConnections_3",
+      "resource": "Connection",
+      "key": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
+      "id": "Connection2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e2e62a88b-6fdb-43dd-b7b9-19e4b2bec53eFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-microsoft-outlook365",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Obtener Asset - Ruta archivo Config",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "RPA_PRD_Alcaldia_Medellin/04 - Pruebas Estabilizacion.Servicio_Ciudadania_Servicio_Ciudadania_PQRSD_Emails_config",
+      "id": "assetRPA_PRD_Alcaldia_Medellin/04 - Pruebas Estabilizacion.Servicio_Ciudadania_Servicio_Ciudadania_PQRSD_Emails_configRPA_PRD_Alcaldia_Medellin/04 - Pruebas EstabilizacionFalseServicio_Ciudadania_Servicio_Ciudadania_PQRSD_Emails_configFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "RPA_PRD_Alcaldia_Medellin/04 - Pruebas Estabilizacion",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Servicio_Ciudadania_Servicio_Ciudadania_PQRSD_Emails_config",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Mover Email Descartado",
+      "activityId": "MoveEmailConnections_3",
+      "resource": "Connection",
+      "key": "bb225847-fc75-4d78-ad27-4e1f6da9d254",
+      "id": "Connectionbb225847-fc75-4d78-ad27-4e1f6da9d254bb225847-fc75-4d78-ad27-4e1f6da9d254False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "bb225847-fc75-4d78-ad27-4e1f6da9d254",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-microsoft-outlook365",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Run Agent: Agent - Extract_Data_From_Content_Email",
+      "activityId": "RunJob_1",
+      "resource": "process",
+      "key": "RPA_PRD_Alcaldia_Medellin/00 - Agents/Solution - Extraccion de Datos de Correos.Agent - Extract_Data_From_Content_Email",
+      "id": "processRPA_PRD_Alcaldia_Medellin/00 - Agents/Solution - Extraccion de Datos de Correos.Agent - Extract_Data_From_Content_EmailRPA_PRD_Alcaldia_Medellin/00 - Agents/Solution - Extraccion de Datos de CorreosFalseAgent - Extract_Data_From_Content_EmailFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "RPA_PRD_Alcaldia_Medellin/00 - Agents/Solution - Extraccion de Datos de Correos",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Agent - Extract_Data_From_Content_Email",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

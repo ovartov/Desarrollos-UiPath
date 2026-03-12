@@ -1,0 +1,58 @@
+{
+  "assemblyStates": {
+    "ExtendedExtractionRe.NZKDVbz9zC1xDehc3TcOVV4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GptIxp11.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GptIxp11",
+        "hash": "MTQ4MTQzMzY0",
+        "assemblyName": "ExtendedExtractionRe.NZKDVbz9zC1xDehc3TcOVV4"
+      }
+    },
+    "Agente___Busqueda_de.CTTkF3JfsPJ1DVzzHawrBm2": {
+      "namespace": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Busqueda_de_Banco_por_Nombre_Output.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Busqueda_de_Banco_por_Nombre_Output",
+        "hash": "LTgxMDM3MjY0NQ",
+        "assemblyName": "Agente___Busqueda_de.CTTkF3JfsPJ1DVzzHawrBm2"
+      }
+    },
+    "Agent___Extract_Data.OBRLn20dl3M1hEggT1mrvxc3": {
+      "namespace": "UiPath.System.Activities.ViewModels.SWEntities.Agent___Extract_Data_From_Content_Email_Output.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.System.Activities.ViewModels.SWEntities.Agent___Extract_Data_From_Content_Email_Output",
+        "hash": "LTkyNjgzMTE3Mg",
+        "assemblyName": "Agent___Extract_Data.OBRLn20dl3M1hEggT1mrvxc3"
+      }
+    },
+    "Agente___Busqueda_de.Mi2J5RyauJ1wzHnd4KVXga3": {
+      "namespace": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Busqueda_de_Banco_por_Nombre_Input.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Busqueda_de_Banco_por_Nombre_Input",
+        "hash": "MTE1NTE2ODU4Mg",
+        "assemblyName": "Agente___Busqueda_de.Mi2J5RyauJ1wzHnd4KVXga3"
+      }
+    },
+    "Agente___Extraccion_.NcFGs34ne3H1Mr6Gb2phzg34": {
+      "namespace": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Extraccion_de_Datos_de_Emails_Input.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.System.Activities.ViewModels.SWEntities.Agente___Extraccion_de_Datos_de_Emails_Input",
+        "hash": "MjE0MzQ4MjUwNw",
+        "assemblyName": "Agente___Extraccion_.NcFGs34ne3H1Mr6Gb2phzg34"
+      }
+    },
+    "Agent___Extract_Data.JESi82yUTHC1Z0X1e3nD25Y3": {
+      "namespace": "UiPath.System.Activities.ViewModels.SWEntities.Agent___Extract_Data_From_Content_Email_Input.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.System.Activities.ViewModels.SWEntities.Agent___Extract_Data_From_Content_Email_Input",
+        "hash": "LTczMjk4MDYzOQ",
+        "assemblyName": "Agent___Extract_Data.JESi82yUTHC1Z0X1e3nD25Y3"
+      }
+    }
+  }
+}
