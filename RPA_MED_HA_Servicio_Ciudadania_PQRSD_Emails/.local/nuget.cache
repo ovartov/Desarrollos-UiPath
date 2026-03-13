@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jPUP0nwOXw8=",
+  "dgSpecHash": "VrKw2CseImA=",
   "success": true,
-  "projectFilePath": "C:\\Desarrollos UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local\\",
+  "projectFilePath": "C:\\Users\\Inori-Yuhira-Blue\\Documents\\UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Inori-Yuhira-Blue\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Inori-Yuhira-Blue\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",

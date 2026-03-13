@@ -24855,9 +24855,9 @@
     "restore": {
       "projectUniqueName": "RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails",
       "projectName": "RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails",
-      "projectPath": "C:\\Desarrollos UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local",
+      "projectPath": "C:\\Users\\Inori-Yuhira-Blue\\Documents\\UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local",
       "packagesPath": "C:\\Users\\Inori-Yuhira-Blue\\.nuget\\packages\\",
-      "outputPath": "C:\\Desarrollos UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local",
+      "outputPath": "C:\\Users\\Inori-Yuhira-Blue\\Documents\\UiPath\\RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"

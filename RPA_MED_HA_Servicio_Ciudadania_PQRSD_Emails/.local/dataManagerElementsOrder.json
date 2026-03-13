@@ -198,7 +198,10 @@
     {
       "Path": "Proceso/04 - Procesamiento Emails/RPA_MED_Process_List_Emails.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "arrDiscardTrash&Sequence_88",
+        "strListDiscardTrash&Sequence_88"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null

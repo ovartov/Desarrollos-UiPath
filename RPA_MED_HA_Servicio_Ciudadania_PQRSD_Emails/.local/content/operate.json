@@ -4,8 +4,6 @@
   "projectId": "86f6f9f9-84fb-46f9-b255-76ae7f98e53f",
   "main": "RPA_MED_Main.xaml",
   "dependencies": {
-    "System.Activities.ViewModels": "[1.20260211.1]",
-    "UiPath.Database.Activities": "[2.0.0]",
     "UiPath.DocumentUnderstanding.Activities": "[3.0.0-preview]",
     "UiPath.Excel.Activities": "[2.24.4]",
     "UiPath.Mail.Activities": "[1.24.2]",
@@ -19,7 +17,7 @@
   "runtimeOptions": {
     "isAttended": false,
     "requiresUserInteraction": true,
-    "robotVersion": "26.0.188"
+    "robotVersion": "25.10.0"
   },
   "designOptions": {
     "projectProfile": "Development",

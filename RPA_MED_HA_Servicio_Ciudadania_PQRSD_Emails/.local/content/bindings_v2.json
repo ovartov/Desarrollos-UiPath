@@ -5,11 +5,11 @@
       "activityDisplayName": "Enviar Correo Notificacion",
       "activityId": "SendMailConnections_3",
       "resource": "Connection",
-      "key": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
-      "id": "Connection2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e2e62a88b-6fdb-43dd-b7b9-19e4b2bec53eFalse",
+      "key": "1d4ecb1f-1989-4367-88b3-d65a47648f6b",
+      "id": "Connection1d4ecb1f-1989-4367-88b3-d65a47648f6b1d4ecb1f-1989-4367-88b3-d65a47648f6bFalse",
       "value": {
         "ConnectionId": {
-          "defaultValue": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
+          "defaultValue": "1d4ecb1f-1989-4367-88b3-d65a47648f6b",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"
@@ -39,6 +39,26 @@
       },
       "metadata": {
         "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Obtener lista de emails a procesar",
+      "activityId": "GetEmailListConnections_1",
+      "resource": "Connection",
+      "key": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
+      "id": "Connection2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e2e62a88b-6fdb-43dd-b7b9-19e4b2bec53eFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "2e62a88b-6fdb-43dd-b7b9-19e4b2bec53e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-microsoft-outlook365",
+        "UseConnectionService": "True"
       }
     },
     {
