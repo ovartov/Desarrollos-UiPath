@@ -1,0 +1,9 @@
+{
+  "Type": "Process",
+  "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "Created": "2026-03-15T00:00:00.0000000Z",
+  "Updated": "2026-03-15T00:00:00.0000000Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
