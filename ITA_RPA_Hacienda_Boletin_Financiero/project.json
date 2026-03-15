@@ -1,0 +1,66 @@
+{
+  "name": "ITA_RPA_Hacienda_Boletin_Financiero",
+  "projectId": "86f6f9f9-84fb-46f9-b255-76ae7f98e53f",
+  "description": "El proceso automatizado abarca desde la inicialización hasta el cierre, gestionando la configuración, la verificación de archivos en una ruta NAS, y el procesamiento de documentos PDF y CSV para extraer datos bancarios. Estos se integran en un Boletín Financiero tras consultar una base de datos SQL y generar un informe Excel. Incluye notificaciones por correo en cada etapa, manejo robusto de errores y generación de logs locales y en la nube para garantizar trazabilidad completa.",
+  "main": "ITA_RPA_Main.xaml",
+  "dependencies": {
+    "UiPath.Database.Activities": "[2.0.0]",
+    "UiPath.DocumentUnderstanding.Activities": "[3.0.0-preview]",
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.Mail.Activities": "[1.24.2]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.5.0-preview]",
+    "UiPath.System.Activities": "[25.10.0]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "25.10.19",
+    "UiPath.WebAPI.Activities": "[2.3.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.8.0",
+  "projectVersion": "1.0.1-alpha.5",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "ITA_RPA_Main.xaml",
+      "uniqueId": "28f67625-9f30-4163-b7d7-381ac6da1b75",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

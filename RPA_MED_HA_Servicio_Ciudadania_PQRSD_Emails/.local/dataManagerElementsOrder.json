@@ -185,17 +185,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Proceso/03 - Verificacion de Emails/RPA_MED_Obtener_Lista_Emails.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [
-        "listEmailsOffice365",
-        "dicConfig"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Proceso/04 - Procesamiento Emails/RPA_MED_Process_List_Emails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
