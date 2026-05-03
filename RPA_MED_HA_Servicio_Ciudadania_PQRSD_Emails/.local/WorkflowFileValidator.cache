@@ -1,18 +1,11 @@
 Proceso/00 - Comun/RPA_MED_Matar_Procesos.xaml|639087891411266021
 Proceso/02 - Verificacion de Insumos/RPA_MED_Verificacion_Carpetas.xaml|639087891098794068
-Proceso/02 - Verificacion de Insumos/RPA_MED_Verificacion_Archivos.xaml|639087891092829332
 Proceso/00 - Comun/RPA_MED_Logs.xaml|639087891416995177
-Proceso/03 - Verificacion de Emails/RPA_MED_Obtener_Lista_Emails.xaml|639088838465984477
-Proceso/00 - Comun/RPA_MED_Envio_Correos.xaml|639089141768407357
 Proceso/03 - Verificacion de Emails/RPA_MED_Get_List_Mails.xaml|639088838465696108
-Proceso/01 - Inicializacion/RPA_MED_Lectura_Archivo_Configuracion.xaml|639088838467632631
-RPA_MED_Main.xaml|639090454350335085
-Proceso/04 - Procesamiento Emails/RPA_MED_Process_List_Emails.xaml|639090229040176597
-Proceso/02 - Verificacion de Insumos/RPA_MED_Verificacion_Carpetas.xaml|639087891098794068
-Proceso/00 - Comun/RPA_MED_Matar_Procesos.xaml|639087891411266021
-Proceso/00 - Comun/RPA_MED_Logs.xaml|639087891416995177
-Proceso/02 - Verificacion de Insumos/RPA_MED_Verificacion_Archivos.xaml|639087891092829332
+Proceso/02 - Verificacion de Insumos/RPA_MED_Verificacion_Archivos.xaml|639120071511301417
 Proceso/00 - Comun/RPA_MED_Envio_Correos.xaml|639089141768407357
-Proceso/03 - Verificacion de Emails/RPA_MED_Get_List_Mails.xaml|639088838465696108
+Proceso/Test/Prueba descarga insumos input.xaml|639120071533095022
+Proceso/Test/Convertir Matriz de Refinamiento a JSON.xaml|639120106461770177
 Proceso/01 - Inicializacion/RPA_MED_Lectura_Archivo_Configuracion.xaml|639088838467632631
-Proceso/04 - Procesamiento Emails/RPA_MED_Process_List_Emails.xaml|639090229040176597
+RPA_MED_Main.xaml|639120194236383678
+Proceso/04 - Procesamiento Emails/RPA_MED_Process_List_Emails.xaml|639120224276477074

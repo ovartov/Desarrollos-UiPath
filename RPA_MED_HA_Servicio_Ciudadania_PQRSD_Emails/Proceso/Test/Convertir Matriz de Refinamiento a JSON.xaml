@@ -1,0 +1,264 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Prueba_descarga_insumos_input" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dicConfig" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Prueba_descarga_insumos_input_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.System.Activities.ViewModels.SWEntities.Agent___Extract_Data_From_Content_Email_Input.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Agent___Extract_Data.LmRFe11dtaG1DbqQ9X3SJM3</AssemblyReference>
+      <AssemblyReference>Agent___Extract_Data.JESi82yUTHC1Z0X1e3nD25Y3</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Prueba_descarga_insumos_input" sap:VirtualizedContainerService.HintSize="1287,857.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Borrar remanentes de Bucket de Adjuntos" sap:VirtualizedContainerService.HintSize="484,562" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:IEnumerable(ucas:StorageFileInfo)" Name="outListStorage" />
+        <Variable x:TypeArguments="x:String" Name="strJsonMatrizRefinamiento" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtMatrizRefinamiento" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="RPA_MED_Lectura_Archivo_Configuracion - Invoke Workflow File (Proceso\01 - Inicializacion\RPA_MED_Lectura_Archivo_Configuracion.xaml)" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Proceso\01 - Inicializacion\RPA_MED_Lectura_Archivo_Configuracion.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="dicConfig">[dicConfig]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Usar archivos de Excel" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,610" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Usar archivo Matriz Refinamiento" sap:VirtualizedContainerService.HintSize="512,550" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[dicConfig(&quot;strPathFileMatrizRefinamiento&quot;)]">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="matrizRefinamiento" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,254" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ReadRangeX DisplayName="Leer Matriz" sap:VirtualizedContainerService.HintSize="444,194" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[matrizRefinamiento.Sheet(dicConfig(&quot;envSheetMatrizRefinamiento&quot;)).Range(&quot;A1&quot;)]" SaveTo="[dtMatrizRefinamiento]" VisibleOnly="False" />
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelProcessScopeX>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="' ============================================================&#xD;&#xA;' OBJETIVO: Convertir un DataTable a formato JSON&#xD;&#xA;' INPUT:  dtMatrizRefinamiento (DataTable)&#xD;&#xA;' OUTPUT: strJsonMatrizRefinamiento (String)&#xD;&#xA;' ============================================================&#xD;&#xA;&#xD;&#xA;' StringBuilder para construir el JSON de forma eficiente&#xD;&#xA;Dim sb As New System.Text.StringBuilder&#xD;&#xA;&#xD;&#xA;' Lista para almacenar los nombres de las columnas (títulos)&#xD;&#xA;Dim columns As New List(Of String)&#xD;&#xA;&#xD;&#xA;' ── VALIDACIÓN: Verificar que la tabla no sea nula o esté vacía ──&#xD;&#xA;If dtMatrizRefinamiento Is Nothing Then&#xD;&#xA;    ' Si la tabla es Nothing, retorna un JSON vacío y termina&#xD;&#xA;    strJsonMatrizRefinamiento = &quot;[]&quot;&#xD;&#xA;    Exit Sub&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;If dtMatrizRefinamiento.Columns.Count = 0 Then&#xD;&#xA;    ' Si la tabla no tiene columnas definidas, retorna JSON vacío&#xD;&#xA;    strJsonMatrizRefinamiento = &quot;[]&quot;&#xD;&#xA;    Exit Sub&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;If dtMatrizRefinamiento.Rows.Count = 0 Then&#xD;&#xA;    ' Si la tabla tiene columnas pero ninguna fila de datos,&#xD;&#xA;    ' retorna JSON vacío&#xD;&#xA;    strJsonMatrizRefinamiento = &quot;[]&quot;&#xD;&#xA;    Exit Sub&#xD;&#xA;End If&#xD;&#xA;' ────────────────────────────────────────────────────────────&#xD;&#xA;&#xD;&#xA;' ── PASO 1: Extraer los títulos/columnas del DataTable ──────&#xD;&#xA;For Each col As DataColumn In dtMatrizRefinamiento.Columns&#xD;&#xA;    columns.Add(col.ColumnName) ' Agrega cada nombre de columna a la lista&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;' Inicia el array JSON con corchete de apertura&#xD;&#xA;sb.AppendLine(&quot;[&quot;)&#xD;&#xA;&#xD;&#xA;' Lista que acumulará cada fila como objeto JSON {&quot;col&quot;: &quot;val&quot;, ...}&#xD;&#xA;Dim rowList As New List(Of String)&#xD;&#xA;&#xD;&#xA;' ── PASO 2: Iterar cada fila del DataTable ──────────────────&#xD;&#xA;For Each row As DataRow In dtMatrizRefinamiento.Rows&#xD;&#xA;    &#xD;&#xA;    ' Lista de pares &quot;clave&quot;: &quot;valor&quot; para la fila actual&#xD;&#xA;    Dim fieldList As New List(Of String)&#xD;&#xA;    &#xD;&#xA;    ' ── PASO 3: Iterar cada columna de la fila actual ───────&#xD;&#xA;    For Each col As String In columns&#xD;&#xA;        Dim value As String = &quot;&quot;&#xD;&#xA;        &#xD;&#xA;        ' Verifica que la celda no sea nula antes de leer su valor&#xD;&#xA;        If Not IsDBNull(row(col)) Then&#xD;&#xA;            ' Convierte a string y escapa caracteres especiales&#xD;&#xA;            ' para que el JSON sea válido:&#xD;&#xA;            '   \  →  \\   (barra invertida)&#xD;&#xA;            '   &quot;  →  \&quot;   (comilla doble)&#xD;&#xA;            value = row(col).ToString() _&#xD;&#xA;                        .Replace(&quot;\&quot;, &quot;\\&quot;) _&#xD;&#xA;                        .Replace(&quot;&quot;&quot;&quot;, &quot;\&quot;&quot;&quot;)&#xD;&#xA;        End If&#xD;&#xA;        &#xD;&#xA;        ' Construye el par &quot;NombreColumna&quot;: &quot;Valor&quot; y lo agrega&#xD;&#xA;        fieldList.Add(&quot;&quot;&quot;&quot; &amp; col &amp; &quot;&quot;&quot;: &quot;&quot;&quot; &amp; value &amp; &quot;&quot;&quot;&quot;)&#xD;&#xA;    Next&#xD;&#xA;    &#xD;&#xA;    ' Une todos los pares de la fila con coma y los envuelve en {}&#xD;&#xA;    rowList.Add(&quot;  {&quot; &amp; String.Join(&quot;, &quot;, fieldList) &amp; &quot;}&quot;)&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;' ── PASO 4: Unir todas las filas y cerrar el JSON ───────────&#xD;&#xA;&#xD;&#xA;' Une cada objeto JSON de fila separado por coma y salto de línea&#xD;&#xA;sb.Append(String.Join(&quot;,&quot; &amp; Environment.NewLine, rowList))&#xD;&#xA;&#xD;&#xA;' Agrega salto de línea final y cierra el array JSON&#xD;&#xA;sb.AppendLine(&quot;&quot;)&#xD;&#xA;sb.AppendLine(&quot;]&quot;)&#xD;&#xA;&#xD;&#xA;' ── PASO 5: Asignar el resultado al argumento de salida ─────&#xD;&#xA;strJsonMatrizRefinamiento = sb.ToString()" DisplayName="Invoke Code - Matriz Refinamiento Json" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="dtMatrizRefinamiento">
+            <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtMatrizRefinamiento" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="strJsonMatrizRefinamiento">
+            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strJsonMatrizRefinamiento" />
+          </OutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <Sequence DisplayName="Log" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="strPathFileLogs" />
+          <Variable x:TypeArguments="x:String" Name="strLogType" />
+          <Variable x:TypeArguments="x:String" Name="strLogMessage" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:MultipleAssign DisplayName="Variables de Log" sap:VirtualizedContainerService.HintSize="478,211" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[strPathFileLogs]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[dicConfig("strPathFileLogs")]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[strLogType]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">Info</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[strLogMessage]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[$"Se descargaron archivos desde el Bucket: '{dicConfig("envNameBucketInputsExcel")}'"]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:MultipleAssign>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ITA_RPA_Logs - Invoke Workflow File (Proceso\00 - Comun\ITA_RPA_Logs.xaml)" sap:VirtualizedContainerService.HintSize="478,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Proceso\00 - Comun\RPA_MED_Logs.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="strPathFileLogs">[strPathFileLogs]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="strLogMessage">[strLogMessage]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="strLogType">[strLogType]</InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:InvokeWorkflowFile>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>
