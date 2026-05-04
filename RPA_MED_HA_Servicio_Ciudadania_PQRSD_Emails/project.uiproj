@@ -1,6 +1,0 @@
-{
-  "Name": "RPA_MED_HA_Servicio_Ciudadania_PQRSD_Emails",
-  "ProjectType": "Process",
-  "Description": "El proceso automatizado abarca desde la inicialización hasta el cierre de la fase del desarrolo de Hiperautomatizacion de la extraccion de los informacion de los ciudadanos y solicitudes, respuestas, quejas y reclamos mediante el uso de tecnologia de IA de los emails enviados con contenido de PQRSD a la alcaldia de Medellin.",
-  "MainFile": "RPA_MED_Main.xaml"
-}

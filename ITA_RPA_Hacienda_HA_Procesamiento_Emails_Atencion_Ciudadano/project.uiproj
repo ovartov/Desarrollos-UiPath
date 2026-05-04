@@ -1,6 +1,0 @@
-{
-  "Name": "ITA_RPA_Hacienda_HA_Procesamiento_Emails_Atencion_Ciudadano",
-  "ProjectType": "Process",
-  "Description": "Proceso RPA para procesamiento de emails de atencion al ciudadano - Hacienda Itagui",
-  "MainFile": "ITA_RPA_Main.xaml"
-}
