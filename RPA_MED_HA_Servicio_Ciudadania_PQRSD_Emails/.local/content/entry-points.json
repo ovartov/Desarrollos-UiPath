@@ -1,0 +1,10 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "RPA_MED_Main.xaml",
+      "uniqueId": "97630cbb-d597-4979-a275-5a2e70535d0e",
+      "type": "process"
+    }
+  ]
+}

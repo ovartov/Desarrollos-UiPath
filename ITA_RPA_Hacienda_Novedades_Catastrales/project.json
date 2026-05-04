@@ -1,0 +1,63 @@
+{
+  "name": "ITA_RPA_Hacienda_Novedades_Catastrales",
+  "projectId": "86f6f9f9-84fb-46f9-b255-76ae7f98e53f",
+  "description": "El proceso automatizado tiene como alcance la lectura del archivo de configuración, la verificación de insumos en OneDrive y el procesamiento de los archivos disponibles mediante la aplicación de reglas específicas de transformación según su clasificación. Asimismo, contempla la gestión de los archivos procesados, el registro detallado de la ejecución y el envío de notificaciones automáticas de inicio, finalización o error, garantizando la trazabilidad y eficiencia en toda la operación.",
+  "main": "ITA_RPA_Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.Mail.Activities": "[1.24.2]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.5.0-preview]",
+    "UiPath.System.Activities": "[25.10.0]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "25.10.19"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.8.0",
+  "projectVersion": "1.0.1-alpha.3",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "ITA_RPA_Main.xaml",
+      "uniqueId": "28f67625-9f30-4163-b7d7-381ac6da1b75",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
